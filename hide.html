@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://media.licdn.com/dms/image/v2/D4D03AQGaTz4EV68-cg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721582254760?e=2147483647&v=beta&t=whEu-s7FtutE3zj8d6RkrcLdFLft5OnPVyPCNHOpKTM" alt="">
+    <button>Show/hide</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("img").hide()
+            $("button").click(function(){
+                $("img").toggle()
+            })
+        })
+    </script>
+</body>
+</html>

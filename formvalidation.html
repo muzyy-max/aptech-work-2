@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(97, 179, 198);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;   
+    }
+    .container{
+        text-align: center;
+        padding: 40px;
+        background-color: aliceblue;
+        border: 2px rgb(7, 7, 234) solid;
+        border-radius: 30px;
+    }
+    h1{
+        font-style: italic;
+    }
+</style>
+<body>
+    <div class="container">
+    <h1>Form Validation</h1>
+    <label>Name :</label>
+    <input type="text" id="Name" placeholder="Enter Your Name"><br>
+    <label>Contact Number :</label>
+    <input type="number" id="number" placeholder="Enter Your Number"><br>
+    <label>E-mail :</label>
+    <input type="email" id="email" placeholder="Enter Your E-mail"><br>
+    <label>Password :</label>
+    <input type="password" id="password" placeholder="Enter Your password"><br>
+    <label>Confirm password :</label>
+    <input type="password" id="confirmpasword" placeholder="Enter Your Confirm password"><br>
+    <button onclick="submitform">submit</button>
+    </div>
+    <script>
+        function submitform(){
+        let a = document.getElementById("Name").value
+        let b = document.getElementById("number").value
+        let c = document.getElementById("email").value
+        let d = document.getElementById("password").value
+        let e = document.getElementById("confirmpasword").value
+        
+            if (a== "" || b== "" || c== "" || d== "" || e== ""){
+            alert ("ankhen khol ke kaam karo")
+            }
+        
+            else if ( b.length > 11){
+            alert ("sahi se likh")
+            }
+
+            
+
+        }
+    </script>
+</body>
+</html>
